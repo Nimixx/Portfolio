@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import NimixxImg from '../../../../assets/Nimixx_Thumb.webp';
+import NimixxImg from '../../../../assets/Wade_Thumb.webp';
 
 export default function Wade() {
   return (
     <Link
-      to={`/projects/nimixx`}
-      className="min-h-96 project__card hover:shadow-pink-700 hover:outline-pink-400 bg-pink-800/30 backdrop-blur-sm"
+      to={`/projects/wade`}
+      className="min-h-96 project__card hover:shadow-purple-700 hover:outline-purple-400 bg-purple-800/30 backdrop-blur-sm"
     >
       <div className="w-80 h-44">
         <img
@@ -20,8 +20,10 @@ export default function Wade() {
         <h2 className="text-sky-400 text-xl font-bold">Wade - Custom design</h2>
         <h3 className="text-yellow-400 text-lg -mt-5">SPA - Website</h3>
         <p className="text-gray-200 text-left">
-          Moje malá skromná aplikace pomocí které vyprávím o tom kdo jsem, ale
-          také ukazuji co všechno už jsem se naučil.
+          Designová stránka pro reprezentaci firmy. Jedná se moderní responzivní
+          webovou aplikaci plnou animovaných prvků. Vzhled stránky je přímo od
+          studia Wade. Děkuji studiu za příležitost realizovat tento nápaditý a
+          moderní web.
         </p>
       </div>
       <div className="flex justify-center items-center mt-5 mb-5 gap-3">

@@ -8,6 +8,7 @@ import Projectpage from './pages/Projectpage';
 import Contactpage from './pages/Contactpage';
 import Underlinepage from './pages/Underlinepage';
 import Nimixxpage from './pages/Nimixxpage';
+import WadePage from './pages/Wadepage';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/projects/nimixx',
         element: <Nimixxpage />,
+      },
+      {
+        path: '/projects/wade',
+        element: <WadePage />,
       },
       {
         path: '/contacts',
