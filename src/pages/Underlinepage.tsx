@@ -20,11 +20,7 @@ export default function UnderlinePage() {
       />
 
       <div className="m-auto w-full xl:w-3/5 flex justify-center items-center xl:justify-start xl:items-start flex-col xl:flex-row mt-20 gap-14">
-        <DesktopSidebar
-          year="2023"
-          titleOne="Technologie"
-          titleTwo="Knihovny"
-        />
+        <DesktopSidebar />
         <MobileSidebar />
         <motion.div
           initial={{ opacity: 0, translateX: 60 }}
