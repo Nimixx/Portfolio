@@ -1,69 +1,175 @@
+@tailwind base;
+/* 
+Scrollbar
+*/
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --primary: #171a1d;
+  --secondary: #30aa8c;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.7rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+*::-webkit-scrollbar-track {
+  background: var(--primary);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+*::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background-color: var(--secondary);
+  border: 3px solid var(--primary);
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  /* 
+  Wrappers
+  */
+  .title__section--wrapper {
+    @apply h-96 flex items-center sm:items-start flex-col m-auto gap-2;
   }
-  a:hover {
-    color: #747bff;
+  .title__wrapper {
+    @apply flex justify-center items-center gap-4;
   }
-  button {
-    background-color: #f9f9f9;
+  .nav-wrapper {
+    @apply w-3/4 h-32 m-auto flex items-center justify-between;
   }
+  .section__wrapper {
+    @apply w-full h-screen flex flex-col justify-center items-center;
+  }
+  .section__text--wrapper {
+    @apply flex flex-col items-start gap-2;
+  }
+  .footer__wrapper {
+    @apply w-full h-60 flex flex-col gap-4 justify-end items-center pb-10;
+  }
+  .link__wrapper {
+    @apply hidden md:flex justify-center items-center gap-10 text-white font-bold text-xl;
+  }
+  .project__wrapper {
+    @apply w-full flex flex-col gap-16 justify-center items-center;
+  }
+  .project__card--wrapper {
+    @apply w-5/6 flex justify-center items-start gap-10 flex-wrap;
+  }
+  .card__wrapper {
+    @apply flex justify-center items-center flex-col gap-4 mt-20;
+  }
+  /* 
+  Grid system
+  */
+  .grid-2 {
+    @apply grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2;
+  }
+  /* 
+  Flexbox system
+  */
+  .flex__center {
+    @apply flex justify-center items-center;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  /* 
+  Borders
+  */
+  .border-2-solid-green-400 {
+    @apply border-solid border-2 border-green-400;
+  }
+  /* 
+  Heading system
+  */
+  .primary__heading {
+    @apply text-6xl lg:text-8xl font-extrabold;
+  }
+  .secondary__heading {
+    @apply text-2xl sm:text-4xl lg:text-5xl font-bold;
+  }
+  .tertiary__heading {
+    @apply text-xl lg:text-2xl font-semibold;
+  }
+  .section__heading {
+    @apply uppercase text-6xl font-bold;
+  }
+  .project__heading {
+    @apply text-2xl lg:text-3xl font-bold;
+  }
+  /* 
+  Text system 
+  */
+  .card__btn--text {
+    @apply px-3 py-0.5 rounded-md font-medium;
+  }
+  /* 
+  Gradient text system
+  */
+  .purple-pink {
+    @apply bg-gradient-to-b from-purple-500 to-pink-500 bg-clip-text text-transparent;
+  }
+  .orange-yellow {
+    @apply bg-gradient-to-b from-orange-500 to-yellow-500 bg-clip-text text-transparent;
+  }
+  .lime-green {
+    @apply bg-gradient-to-b from-lime-500 to-green-500 bg-clip-text text-transparent;
+  }
+  .sky-blue {
+    @apply bg-gradient-to-b from-sky-300 to-blue-500 bg-clip-text text-transparent;
+  }
+  /* 
+  Button system
+  */
+  .story__btn {
+    @apply mt-5 text-lime-200 font-bold text-xl uppercase rounded-sm border-solid border-2 border-sky-400 p-2  duration-500 ease-in-out shadow-2xl hover:shadow-sky-300/50 hover:rounded-lg;
+  }
+  .project__btn {
+    @apply text-green-400 rounded-sm border-solid border-2 border-green-400 p-2 hover:bg-green-400 duration-500 ease-in-out hover:text-gray-900 shadow-2xl hover:shadow-green-300/50 hover:rounded-lg;
+  }
+  /* 
+  Links system
+  */
+  .primary__link {
+    @apply hover:text-gray-400 duration-500 ease-in-out;
+  }
+  .secondary__link {
+    @apply hover:text-gray-300 duration-500 ease-in-out;
+  }
+  .hover__link {
+    @apply hover:scale-110 duration-500 ease-in-out hover:text-green-400;
+  }
+  .hover__link--social {
+    @apply hover:-translate-y-1 duration-300 ease-in-out;
+  }
+  /* 
+  Animation class
+  */
+  .duration500 {
+    @apply duration-500 ease-in-out;
+  }
+
+  .social__menu {
+    @apply text-gray-400 text-2xl flex justify-center items-center gap-5;
+  }
+}
+/* 
+Card system
+*/
+.project__card {
+  @apply w-80 bg-black-500 shadow-xl shadow-black-900 rounded-xl hover:scale-110 duration-500 ease-in-out outline outline-transparent outline-offset-4;
+}
+/* 
+Tailwind CSS Fix
+*/
+.react {
+  padding: 12px 6px;
+}
+.tail {
+  padding: 18px 6px;
 }

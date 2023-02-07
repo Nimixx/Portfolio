@@ -1,10 +1,45 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import Homepage from './pages/Homepage';
+import Projectpage from './pages/Projectpage';
+import Contactpage from './pages/Contactpage';
+import Underlinepage from './pages/Underlinepage';
+import Nimixxpage from './pages/Nimixxpage';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <Homepage />,
+      },
+      {
+        path: '/projects',
+        element: <Projectpage />,
+      },
+      {
+        path: '/projects/underline',
+        element: <Underlinepage />,
+      },
+      {
+        path: '/projects/nimixx',
+        element: <Nimixxpage />,
+      },
+      {
+        path: '/contacts',
+        element: <Contactpage />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
