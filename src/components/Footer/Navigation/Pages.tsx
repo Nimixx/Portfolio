@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Pages() {
   return (
-    <ul className="text-gray-400 font-medium flex__center gap-4">
+    <ul className="text-gray-300 font-medium flex__center gap-4">
       <li className="secondary__link">
         <Link to={`/`}>Domů</Link>
       </li>

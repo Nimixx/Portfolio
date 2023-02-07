@@ -19,6 +19,9 @@ module.exports = {
           900: '#090909',
         },
       },
+      backgroundImage: {
+        background: "url('./src/assets/background.webp')",
+      },
     },
   },
   plugins: [],

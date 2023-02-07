@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 
 export default function Social() {
   return (
-    <ul className="text-gray-500 text-2xl flex__center gap-4">
+    <ul className="text-gray-400 text-2xl flex__center gap-4">
       <li className="primary__link">
         <a
           href="https://www.linkedin.com/in/tade%C3%A1%C5%A1-thelen-540728250/"

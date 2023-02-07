@@ -173,3 +173,11 @@ Tailwind CSS Fix
 .tail {
   padding: 18px 6px;
 }
+
+/* 
+Tailwind Custom Class
+*/
+
+.text-10xl {
+  font-size: 10rem;
+}

@@ -6,6 +6,7 @@ import Underline from '../components/Projects/Projects/Cards/Underline';
 
 import { motion, useScroll, useSpring } from 'framer-motion';
 import QrCode from '../components/Projects/Challenges/QRCode';
+import Wade from '../components/Projects/Projects/Cards/Wade';
 
 export default function ProjectsPage() {
   const { scrollYProgress } = useScroll();
@@ -41,9 +42,7 @@ export default function ProjectsPage() {
         transition={{ duration: 0.3 }}
         className="project__card--wrapper"
       >
-        {/* 
-    Project cards
-    */}
+        <Wade />
         <Underline />
         <Nimixx />
       </motion.div>

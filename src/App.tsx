@@ -6,7 +6,7 @@ import './index.css';
 
 export default function App() {
   return (
-    <div className="bg-black-600">
+    <div className="bg-background bg-no-repeat bg-cover bg-center bg-fixed">
       <ScrollRestoration />
       <Navigation />
       <div id="detail">
