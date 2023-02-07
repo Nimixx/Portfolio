@@ -4,7 +4,7 @@ Scrollbar
 */
 :root {
   --primary: #171a1d;
-  --secondary: #30aa8c;
+  --secondary: #f475ff;
 }
 
 /* Firefox */
@@ -81,8 +81,8 @@ Scrollbar
   /* 
   Borders
   */
-  .border-2-solid-green-400 {
-    @apply border-solid border-2 border-green-400;
+  .border-2-solid-pink-400 {
+    @apply border-solid border-2 border-pink-400;
   }
   /* 
   Heading system
@@ -130,7 +130,7 @@ Scrollbar
     @apply mt-5 text-lime-200 font-bold text-xl uppercase rounded-sm border-solid border-2 border-sky-400 p-2  duration-500 ease-in-out shadow-2xl hover:shadow-sky-300/50 hover:rounded-lg;
   }
   .project__btn {
-    @apply text-green-400 rounded-sm border-solid border-2 border-green-400 p-2 hover:bg-green-400 duration-500 ease-in-out hover:text-gray-900 shadow-2xl hover:shadow-green-300/50 hover:rounded-lg;
+    @apply text-green-400 rounded-sm border-solid border-2 border-pink-400 p-2 hover:bg-pink-400/10 duration-500 ease-in-out  shadow-2xl hover:shadow-pink-200 hover:rounded-lg;
   }
   /* 
   Links system
@@ -162,7 +162,7 @@ Scrollbar
 Card system
 */
 .project__card {
-  @apply w-80 bg-black-500 shadow-xl shadow-black-900 rounded-xl hover:scale-110 duration-500 ease-in-out outline outline-transparent outline-offset-4;
+  @apply w-80 shadow-xl shadow-black-900 rounded-xl hover:scale-110 duration-500 ease-in-out outline outline-transparent outline-offset-4;
 }
 /* 
 Tailwind CSS Fix

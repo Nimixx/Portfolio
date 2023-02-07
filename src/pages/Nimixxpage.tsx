@@ -32,7 +32,7 @@ export default function UnderlinePage() {
             Underline Videoproduction
           </h2>
           <h3 className="orange-yellow tertiary__heading">Úvod</h3>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-200 text-lg">
             Při tvorbě stránky pro prezentaci mých projektů a informací o mně
             jsem zvolil jasnou strategii. Udělat stránku co možná nejvíc
             jednoduchou, tak aby vše bylo hned po ruce a nikdo nemusel prohlížet
@@ -40,7 +40,7 @@ export default function UnderlinePage() {
             na mě. Z toho důvodu stránka neobsahuje prakticky ani žádnou
             navigaci a celý layout je v jednotném designu.
           </p>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-200 text-lg">
             Vše se odehrává na hlavní stránce, kde je možné najít veškeré
             potřebné informace o mně. Místo navigačního menu jsou pouze linky na
             důležité sociální sítě a můj Github.
@@ -48,10 +48,10 @@ export default function UnderlinePage() {
           <img
             src={NimixxWeb}
             alt=""
-            className="rounded-xl my-5 outline  outline-2 outline-pink-400/50 shadow-lg shadow-pink-400/20"
+            className="rounded-xl my-5 outline  outline-2 outline-pink-400/50 shadow-lg shadow-pink-400/50"
           />
           <h3 className="lime-green project__heading">Postup</h3>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-200 text-lg">
             Řešení pro moji webovou stránku bylo jasné už od začátku. Rád
             pracuji v Reactu a rozhodně rád styluju pomocí TailwidCSS. Zároveň
             jsem chtěl udržet kód co možná nejmenší, ale také dobře

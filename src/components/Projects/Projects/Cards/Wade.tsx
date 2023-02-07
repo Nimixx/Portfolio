@@ -7,7 +7,7 @@ export default function Wade() {
   return (
     <Link
       to={`/projects/nimixx`}
-      className="min-h-96 project__card hover:shadow-pink-700 hover:outline-pink-400"
+      className="min-h-96 project__card hover:shadow-pink-700 hover:outline-pink-400 bg-pink-800/30 backdrop-blur-sm"
     >
       <div className="w-80 h-44">
         <img

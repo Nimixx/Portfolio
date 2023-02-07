@@ -7,7 +7,7 @@ export default function Underline() {
   return (
     <Link
       to={`/projects/underline`}
-      className="min-h-96 project__card hover:shadow-sky-700 hover:outline-sky-400"
+      className="min-h-96 project__card hover:shadow-sky-700 hover:outline-sky-400 bg-sky-800/30 backdrop-blur-sm"
     >
       <div className="w-80 h-44">
         <img
