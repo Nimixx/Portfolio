@@ -9,6 +9,7 @@ export default function Social() {
     <ul className="text-gray-400 text-2xl flex__center gap-4">
       <li className="primary__link">
         <a
+          className="hover__link"
           href="https://www.linkedin.com/in/tade%C3%A1%C5%A1-thelen-540728250/"
           target="_blank"
           rel="noreferrer"
@@ -18,6 +19,7 @@ export default function Social() {
       </li>
       <li className="primary__link">
         <a
+          className="hover__link"
           href="https://www.facebook.com/tadeas.thelen/"
           target="_blank"
           rel="noreferrer"
@@ -26,7 +28,12 @@ export default function Social() {
         </a>
       </li>
       <li className="primary__link">
-        <a href="https://github.com/Nimixx" target="_blank" rel="noreferrer">
+        <a
+          className="hover__link"
+          href="https://github.com/Nimixx"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub />
         </a>
       </li>

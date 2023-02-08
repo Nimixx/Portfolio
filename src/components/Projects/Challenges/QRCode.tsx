@@ -4,7 +4,7 @@ import QRCodImg from '../../../assets/QRCode.webp';
 export default function QrCode() {
   return (
     <a
-      className="min-h-96 project__card hover:shadow-lime-200 hover:outline-lime-200 bg-sky-800/30 backdrop-blur-sm"
+      className="min-h-96 project__card hover:shadow-sky-700 hover:outline-sky-400 bg-sky-800/30 backdrop-blur-sm"
       href="https://nimixx.github.io/QR-Code/"
       target="_blank"
       rel="noreferrer"

@@ -162,7 +162,7 @@ Scrollbar
 Card system
 */
 .project__card {
-  @apply w-80 shadow-xl shadow-black-900 rounded-xl hover:scale-110 duration-500 ease-in-out outline outline-transparent outline-offset-4;
+  @apply w-80 shadow-xl shadow-black-900 rounded-xl duration-500 ease-in-out outline outline-transparent;
 }
 /* 
 Tailwind CSS Fix
@@ -172,12 +172,4 @@ Tailwind CSS Fix
 }
 .tail {
   padding: 18px 6px;
-}
-
-/* 
-Tailwind Custom Class
-*/
-
-.text-10xl {
-  font-size: 10rem;
 }
