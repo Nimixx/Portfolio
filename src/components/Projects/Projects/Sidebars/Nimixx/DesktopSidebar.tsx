@@ -16,7 +16,7 @@ export default function DesktopSidebar() {
       initial={{ opacity: 0, translateX: -60 }}
       whileInView={{ opacity: 1, translateX: 0 }}
       transition={{ duration: 0.3 }}
-      className='w-full xl:w-72 xl:pb-5 rounded-xl hidden xl:flex items-center gap-8 flex-col outline outline-2 outline-pink-400 bg-pink-400/10 backdrop-blur-sm shadow-xl shadow-pink-400/50'
+      className='w-full xl:w-72 xl:pb-5 rounded-xl hidden xl:flex items-center gap-8 flex-col outline outline-2 outline-pink-400 bg-pink-400/10 backdrop-blur-sm shadow-xl shadow-pink-400/50 sticky top-10'
     >
       <img src={UnderlineImg} alt='' className='rounded-tl-xl rounded-tr-xl' />
       <div className='grid grid-rows-7 grid-cols-1 gap-8'>
