@@ -130,7 +130,10 @@ Scrollbar
     @apply mt-5 text-lime-200 font-bold text-xl uppercase rounded-sm border-solid border-2 border-sky-400 p-2  duration-500 ease-in-out shadow-2xl hover:shadow-sky-300/50 hover:rounded-lg;
   }
   .project__btn {
-    @apply text-green-400 rounded-sm border-solid border-2 border-pink-400 p-2 hover:bg-pink-400/10 duration-500 ease-in-out  shadow-2xl hover:shadow-pink-200 hover:rounded-lg;
+    @apply text-green-400 rounded-sm border-solid border-2 border-pink-400 p-2 duration-500 ease-in-out hover:rounded-lg shadow-xl hover:bg-pink-800/30 hover:shadow-pink-800/60;
+  }
+  .project__btn--second {
+    @apply mt-5 text-green-400 font-bold text-lg md:text-2xl uppercase rounded-sm border-solid border-2 border-pink-400 p-2  duration-500 ease-in-out shadow-xl hover:bg-pink-800/30 hover:shadow-pink-800/60 hover:rounded-lg;
   }
   /* 
   Links system
@@ -162,7 +165,7 @@ Scrollbar
 Card system
 */
 .project__card {
-  @apply w-80 shadow-xl shadow-black-900 rounded-xl duration-500 ease-in-out outline outline-transparent;
+  @apply w-80 shadow-xl shadow-black-900 rounded-xl hover:-translate-y-5 duration-500 ease-in-out outline outline-transparent;
 }
 /* 
 Tailwind CSS Fix

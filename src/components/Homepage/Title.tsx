@@ -19,8 +19,8 @@ export default function Title() {
         transition={{ duration: 0.3 }}
         className='primary__heading purple-pink'
       >
-        Nimixx#7777
-        {/* <span className='secondary__heading orange-yellow'>Tadeáš</span> */}
+        Nimixx
+        <span className='secondary__heading orange-yellow'>Tadeáš</span>
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, translateX: 60 }}
