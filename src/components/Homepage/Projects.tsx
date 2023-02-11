@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Projects() {
   return (
     <div className='section__wrapper'>
-      <div className='w-2/3 m-auto grid-2 place-items-center'>
+      <div className='w-2/3 m-auto grid-2 place-items-center gap-10'>
         <div className='section__text--wrapper'>
           <motion.h2
             initial={{ opacity: 0, translateX: -60 }}
@@ -22,9 +22,9 @@ export default function Projects() {
             initial={{ opacity: 0, translateX: 60 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.3 }}
-            className='text-white text-2xl'
+            className='text-rose-400 text-2xl'
           >
-            Stále se budu snažit zlepšovat v tom co mě baví
+            Stále se budu snažit zlepšovat v tom co mě baví 🙏
           </motion.h3>
           <motion.p
             initial={{ opacity: 0, translateY: 60 }}
@@ -32,7 +32,7 @@ export default function Projects() {
             transition={{ duration: 0.3 }}
             className='text-gray-400 text-xl'
           >
-            Věřím že v budoucnu budu moct pracovat jako FrontEnd developer a
+            Věřím že v budoucnu budu moct pracovat jako Front-end developer a
             tvorbou stránek se budu živit. Mým cílem je tak z mého koníčku
             udělat zaměstání.
           </motion.p>
@@ -51,11 +51,8 @@ export default function Projects() {
           initial={{ opacity: 0, translateY: 60 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.3 }}
-          className='flex justify-center items-center gap-6 place-self-center'
+          className='place-self-center'
         >
-          <span className='mt-5 text-4xl py-3 px-2 rounded-sm bg-red-400 border-solid border-2 border-red-200 p-2  duration-500 ease-in-out shadow-xl shadow-red-300/30 '>
-            💽
-          </span>
           <Link to={`/projects`} className='project__btn--second'>
             Moje projekty
           </Link>
@@ -64,9 +61,10 @@ export default function Projects() {
           initial={{ opacity: 0, translateX: 60 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.3 }}
+          className='place-self-center'
         >
-          <p className='text-fuchsia-400 text-6xl font-bold hidden xl:block'>
-            Projekty jsou to nejvíc co mohu ukázat <span>🪐</span>
+          <p className='text-fuchsia-400 text-4xl font-bold hidden xl:block '>
+            Projekty řeknou mnohem více <span>💾</span>
           </p>
         </motion.div>
       </div>

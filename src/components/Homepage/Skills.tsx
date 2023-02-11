@@ -5,24 +5,30 @@ import { motion } from 'framer-motion';
 export default function Skills() {
   return (
     <div className='section__wrapper'>
-      <div className='w-2/3 m-auto grid-2 place-items-center'>
-        <motion.p
+      <div className='w-2/3 m-auto grid-2 place-items-center gap-10'>
+        <motion.div
           initial={{ opacity: 0, translateX: 60 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.3 }}
-          className='place-self-center text-fuchsia-400 text-2xl hidden xl:block'
+          className='place-self-center hidden xl:block'
         >
-          Html / CSS / Sass / Javascript / TypeSript
-        </motion.p>
-        <motion.p
+          <span className='text-orange-400 text-xl font-light'>HTML</span>{' '}
+          <span className='text-sky-300 text-2xl font-medium'>CSS</span>{' '}
+          <span className='text-pink-400 text-4xl font-semibold'>Sass</span>{' '}
+          <span className='text-blue-400 text-6xl font-bold'>TypeSript</span>{' '}
+          <span className='text-yellow-400 text-4xl font-semibold'>
+            JavaScript
+          </span>
+        </motion.div>
+        <motion.a
+          href=''
           initial={{ opacity: 0, translateX: 60 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.3 }}
-          className='text-yellow-200 secondary__heading hidden xl:block'
+          className='text-pink-400 tertiary__heading font-bold underline underline-offset-8 decoration-purple-500 duration-500 hover:decoration-amber-400 hidden xl:block'
         >
-          Všechno se sem nevejde... ale každopádně se rád naučím co bude
-          potřeba.
-        </motion.p>
+          Koukni na můj kompletní Tech Stack 👊
+        </motion.a>
         <div className='section__text--wrapper'>
           <motion.h2
             initial={{ opacity: 0, translateX: -60 }}
@@ -31,15 +37,15 @@ export default function Skills() {
             id='aboutTitle'
             className='section__heading purple-pink'
           >
-            Co dokážu
+            Co umím ?
           </motion.h2>
           <motion.h3
             initial={{ opacity: 0, translateX: 60 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.3 }}
-            className='text-white text-2xl'
+            className='text-red-400 text-2xl'
           >
-            Všechno co už jsem se naučil a ještě naučím
+            Pracovat s tím co už jsem se naučil 💡
           </motion.h3>
           <motion.p
             initial={{ opacity: 0, translateY: 60 }}
@@ -48,9 +54,8 @@ export default function Skills() {
             className='text-gray-400 text-xl'
           >
             Jinak se zaměřuji na tvorbu webových stránek a aplikací. Nejraději
-            pracuju v reactu, ale nedělá mi problém postavit projekt v jiném
-            frameworku. Vždy se snažím vybrat řešení, které je vhodné pro
-            konkrétní projekt.
+            pracuju v reactu. Vždy se ale snažím použité techologie na projektu
+            přizpůsobit konkrétnímu problému.
           </motion.p>
         </div>
         <motion.p
@@ -58,19 +63,20 @@ export default function Skills() {
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.3 }}
           className='text-yellow-200 secondary__heading block xl:hidden'
-        >
-          Všechno se sem nevejde... ale každopádně se rád naučím co bude
-          potřeba.
-        </motion.p>
+        ></motion.p>
         <motion.div
           initial={{ opacity: 0, translateX: -60 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.3 }}
           className='place-self-center'
         >
-          <p className='text-sky-400 text-2xl hidden xl:block'>
-            React / Vue / TailWindCSS / Material UI / Vite
-          </p>
+          <span className='text-green-400 text-xl font-light'>Vue</span>{' '}
+          <span className='text-yellow-300 text-2xl font-medium'>API</span>{' '}
+          <span className='text-sky-400 text-4xl font-semibold'>
+            Tailwind CSS
+          </span>{' '}
+          <span className='text-blue-500 text-6xl font-bold'>React</span>{' '}
+          <span className='text-purple-300 text-4xl font-semibold'>Redux</span>{' '}
         </motion.div>
       </div>
     </div>

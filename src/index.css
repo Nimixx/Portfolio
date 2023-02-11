@@ -167,12 +167,3 @@ Card system
 .project__card {
   @apply w-80 shadow-xl shadow-black-900 rounded-xl hover:-translate-y-5 duration-500 ease-in-out outline outline-transparent;
 }
-/* 
-Tailwind CSS Fix
-*/
-.react {
-  padding: 12px 6px;
-}
-.tail {
-  padding: 18px 6px;
-}
