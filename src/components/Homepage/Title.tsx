@@ -12,7 +12,7 @@ export default function Title() {
   };
 
   return (
-    <div className='title__section--wrapper mt-52'>
+    <div className='title__section--wrapper mt-60'>
       <motion.h1
         initial={{ opacity: 0, translateX: -60 }}
         whileInView={{ opacity: 1, translateX: 0 }}

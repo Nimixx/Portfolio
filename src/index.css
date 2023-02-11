@@ -34,7 +34,7 @@ Scrollbar
   Wrappers
   */
   .title__section--wrapper {
-    @apply h-96 flex items-center sm:items-start flex-col m-auto gap-2;
+    @apply h-96 mb-10 flex items-center sm:items-start flex-col m-auto gap-2;
   }
   .title__wrapper {
     @apply flex justify-center items-center gap-4;
@@ -43,7 +43,7 @@ Scrollbar
     @apply w-3/4 h-32 m-auto flex items-center justify-between;
   }
   .section__wrapper {
-    @apply w-full h-screen flex flex-col justify-center items-center;
+    @apply w-full h-screen flex flex-col justify-center items-center pb-20;
   }
   .section__text--wrapper {
     @apply flex flex-col items-start gap-2;

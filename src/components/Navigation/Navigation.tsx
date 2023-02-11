@@ -12,18 +12,18 @@ export default function Navigation() {
     document.getElementById('mobileNav')?.classList.toggle('hidden');
   };
   return (
-    <nav className="w-full flex items-end flex-col">
-      <div className="nav-wrapper">
+    <nav id='nav' className='w-full flex items-end flex-col'>
+      <div className='nav-wrapper'>
         <Link to={`/`}>
           <Avatar />
         </Link>
-        <div className="flex-center gap-16">
+        <div className='flex-center gap-16'>
           <DesktopNav />
           <SocialNav />
         </div>
         <button
           onClick={HandleToggle}
-          className="text-white text-4xl md:hidden"
+          className='text-white text-4xl md:hidden'
         >
           <RxHamburgerMenu />
         </button>

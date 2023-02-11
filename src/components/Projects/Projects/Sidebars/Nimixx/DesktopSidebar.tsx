@@ -7,7 +7,6 @@ import { SiTailwindcss } from 'react-icons/Si';
 import { SiTypescript } from 'react-icons/Si';
 import { FaReact } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-import { SiAffinity } from 'react-icons/Si';
 import { SiNotion } from 'react-icons/Si';
 
 export default function DesktopSidebar() {
@@ -39,9 +38,6 @@ export default function DesktopSidebar() {
           </i>
           <i className='text-4xl p-4 text-purple-400 rounded-lg shadow-lg shadow-purple-400/20 hover:shadow-purple-400/40 hover:shadow-xl hover:-translate-y-1 duration-500'>
             <SiVite />
-          </i>
-          <i className='text-4xl p-4 text-yellow-400 rounded-lg shadow-lg shadow-yellow-400/20 hover:shadow-yellow-400/40 hover:shadow-xl hover:-translate-y-1 duration-500'>
-            <SiAffinity />
           </i>
         </div>
         <h2 className='text-yellow-200 text-2xl font-semibold place-self-center'>

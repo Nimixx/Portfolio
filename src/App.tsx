@@ -6,13 +6,15 @@ import './index.css';
 
 export default function App() {
   return (
-    <div className="bg-background bg-no-repeat bg-cover bg-center bg-fixed">
+    <div className='w-full min-h-screen bg-gradient-to-r from-black-900 via-black-600 to-black-900'>
       <ScrollRestoration />
       <Navigation />
-      <div id="detail">
+      <div id='detail'>
         <Outlet />
       </div>
       <Footer />
     </div>
   );
 }
+
+//bg-background bg-no-repeat bg-cover bg-center bg-fixed relative

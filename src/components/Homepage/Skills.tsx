@@ -1,10 +1,22 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
+import BtnUp from '../Buttons/BtnUp';
+import BtnDown from '../Buttons/BtnDown';
 
 export default function Skills() {
+  const handleClickUp = () => {
+    document.getElementById('about')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+  const handleClickDown = () => {
+    document.getElementById('projects')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
   return (
-    <div className='section__wrapper'>
+    <div id='skills' className='section__wrapper'>
       <div className='w-2/3 m-auto grid-2 place-items-center gap-10'>
         <motion.div
           initial={{ opacity: 0, translateX: 60 }}
@@ -78,6 +90,10 @@ export default function Skills() {
           <span className='text-blue-500 text-6xl font-bold'>React</span>{' '}
           <span className='text-purple-300 text-4xl font-semibold'>Redux</span>{' '}
         </motion.div>
+      </div>
+      <div className='flex justify-center items-center gap-5'>
+        <BtnUp click={handleClickUp} />
+        <BtnDown click={handleClickDown} />
       </div>
     </div>
   );

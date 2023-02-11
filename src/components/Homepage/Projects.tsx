@@ -3,10 +3,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import BtnUp from '../Buttons/BtnUp';
 
 export default function Projects() {
+  const handleClickUp = () => {
+    document.getElementById('nav')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
   return (
-    <div className='section__wrapper'>
+    <div id='projects' className='section__wrapper'>
       <div className='w-2/3 m-auto grid-2 place-items-center gap-10'>
         <div className='section__text--wrapper'>
           <motion.h2
@@ -68,6 +74,7 @@ export default function Projects() {
           </p>
         </motion.div>
       </div>
+      <BtnUp click={handleClickUp} />
     </div>
   );
 }

@@ -15,9 +15,9 @@ export default function Homepage() {
     restDelta: 0.001,
   });
   return (
-    <div className="className='w-full min-h-screen flex-center flex-col overflow-hidden'">
+    <div className="className='w-full min-h-screen flex-center flex-col overflow-hidden relative">
       <motion.div
-        className="fixed top-0 left-0 right-0 h-2 bg-fuchsia-200 origin-left z-10"
+        className='fixed top-0 left-0 right-0 h-2 bg-fuchsia-200 origin-left z-10'
         style={{ scaleX }}
       />
       <Title />

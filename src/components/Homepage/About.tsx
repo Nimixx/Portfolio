@@ -1,8 +1,21 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
+import BtnUp from '../Buttons/BtnUp';
+import BtnDown from '../Buttons/BtnDown';
 
 export default function About() {
+  const handleClickUp = () => {
+    document.getElementById('nav')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+  const handleClickDown = () => {
+    document.getElementById('skills')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div id='about' className='section__wrapper'>
       <div className='w-2/3 m-auto grid-1 xl:grid-2 place-items-center gap-10 '>
@@ -62,6 +75,10 @@ export default function About() {
         >
           Jo a opravdu hodně mám rád kávu <span>☕</span>
         </motion.h2>
+      </div>
+      <div className='flex justify-center items-center gap-5'>
+        <BtnUp click={handleClickUp} />
+        <BtnDown click={handleClickDown} />
       </div>
     </div>
   );
