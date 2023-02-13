@@ -24,11 +24,11 @@ export default function Skills() {
           transition={{ duration: 0.3 }}
           className='place-self-center hidden xl:block'
         >
-          <span className='text-orange-400 text-xl font-light'>HTML</span>{' '}
+          <span className='text-orange-400 text-xl font-normal'>HTML</span>{' '}
           <span className='text-sky-300 text-2xl font-medium'>CSS</span>{' '}
           <span className='text-pink-400 text-4xl font-semibold'>Sass</span>{' '}
-          <span className='text-blue-400 text-6xl font-bold'>TypeSript</span>{' '}
-          <span className='text-yellow-400 text-4xl font-semibold'>
+          <span className='text-blue-400 text-6xl font-bold'>TypeScript</span>{' '}
+          <span className='text-yellow-400 text-2xl font-semibold'>
             JavaScript
           </span>
         </motion.div>
@@ -84,9 +84,7 @@ export default function Skills() {
         >
           <span className='text-green-400 text-xl font-light'>Vue</span>{' '}
           <span className='text-yellow-300 text-2xl font-medium'>API</span>{' '}
-          <span className='text-sky-400 text-4xl font-semibold'>
-            Tailwind CSS
-          </span>{' '}
+          <span className='text-sky-400 text-4xl font-semibold'>Tailwind</span>{' '}
           <span className='text-blue-500 text-6xl font-bold'>React</span>{' '}
           <span className='text-purple-300 text-4xl font-semibold'>Redux</span>{' '}
         </motion.div>

@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { motion, useScroll, useSpring } from 'framer-motion';
+
 import ProjectStatus from '../components/Projects/ProjectStatus';
 import Nimixx from '../components/Projects/Projects/Cards/Nimixx';
 import Underline from '../components/Projects/Projects/Cards/Underline';
-
-import { motion, useScroll, useSpring } from 'framer-motion';
 import QrCode from '../components/Projects/Challenges/QRCode';
+import PaymentMethods from '../components/Projects/Challenges/PaymentMethods';
 import Wade from '../components/Projects/Projects/Cards/Wade';
 
 export default function ProjectsPage() {
@@ -71,6 +72,7 @@ export default function ProjectsPage() {
     Challendge cards
     */}
         <QrCode />
+        <PaymentMethods />
       </motion.div>
     </div>
   );
